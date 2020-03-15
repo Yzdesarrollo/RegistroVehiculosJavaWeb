@@ -5,20 +5,20 @@
  */
 package Controladores;
 
-import dao.contratoDAO;
+import dao.conductorDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import modelos.Contrato;
+import modelos.Conductor;
 
 /**
  *
  * @author yeison.ariel
  */
-public class contratoControlador extends HttpServlet {
+public class conductorControlador extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,10 +37,10 @@ public class contratoControlador extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet contratoControlador</title>");            
+            out.println("<title>Servlet conductorControlador</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet contratoControlador at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet conductorControlador at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
             */
@@ -59,7 +59,7 @@ public class contratoControlador extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //processRequest(request, response);
+       // processRequest(request, response);
     }
 
     /**
@@ -75,26 +75,34 @@ public class contratoControlador extends HttpServlet {
             throws ServletException, IOException {
         //processRequest(request, response);
         
-        int IdC = Integer.parseInt(request.getParameter("txtId"));
-        String IdV = request.getParameter("txtTC");
-        int IdCC = Integer.parseInt(request.getParameter("txtIdC"));
+        //Recibir los datos del formulario
         
-        Contrato Cont = new Contrato();
-        Cont.setId(IdC);
-        Cont.setIdV(IdV);
-        Cont.setIdC(IdCC);
+        int IdC = Integer.parseInt(request.getParameter("txtidc"));
+        String NOMC = request.getParameter("txtNomTC");
+        String TC = request.getParameter("txtLC");
+        String IDV = request.getParameter("txtIVC"); 
+        int IDTC = Integer.parseInt(request.getParameter("txtITC"));
         
-        if (contratoDAO.insertarCon(Cont)){
+        //Instanciar el modelo
+        
+        Conductor conductor = new Conductor();
+        conductor.setIdconduc(IdC);
+        conductor.setNomC(NOMC);
+        conductor.setTipoL(TC);
+        conductor.setIdVh(IDV);
+        conductor.setIdTC(IDTC);
+        
+        if (conductorDAO.insertarCon(conductor)){
             
-            request.setAttribute("mensaje","Contrato registrado correctamente");
+            request.setAttribute("mensaje", "Conductor registrado");
         }
-        else
-        {
-            request.setAttribute("mensaje","Contrato No registrado");
+        else {
+            
+            request.setAttribute("mensaje", "Conductor no registrado");
         }
         
-        request.getRequestDispatcher("contrato.jsp").forward(request, response);
-    
+        request.getRequestDispatcher("conductor.jsp").forward(request, response);
+        
     }
 
     /**

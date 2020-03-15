@@ -435,7 +435,7 @@
 							<li class="active">
 								<a href="index.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
-									Lista de Vehículos
+									Lista de  Vehículos
 								</a>
 
 								<b class="arrow"></b>
@@ -444,7 +444,7 @@
 							<li class="">
 								<a href="registrarConductor.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
-                                                                        Registrar Conductor
+                                                                        Registrar Tipo de Conductor
 								</a>
 
 								<b class="arrow"></b>
@@ -461,6 +461,14 @@
 								<a href="contrato.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
                                                                         Registrar Contrato
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+                                                          <li class="">
+								<a href="conductor.jsp">
+									<i class="menu-icon fa fa-caret-right"></i>
+                                                                        Registrar Conductor
 								</a>
 
 								<b class="arrow"></b>
