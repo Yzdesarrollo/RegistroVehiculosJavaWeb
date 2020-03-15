@@ -442,9 +442,9 @@
 							</li>
 
 							<li class="">
-								<a href="#">
+								<a href="registrarConductor.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
-									Registrar Vehículo
+                                                                        Registrar Conductor
 								</a>
 
 								<b class="arrow"></b>
@@ -453,6 +453,14 @@
 								<a href="registrarTv.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Registrar Tipo Vehículo
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+                                                        <li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+								
 								</a>
 
 								<b class="arrow"></b>
@@ -730,7 +738,7 @@
 				<div class="footer-inner">
 					<div class="footer-content">
 						<span class="bigger-120">
-							Wilson Castro Gil &copy; SoWil-2019
+							Yeison Ariel Zaraza M &copy; CESDE-2020
 						</span>
 
 						&nbsp; &nbsp;

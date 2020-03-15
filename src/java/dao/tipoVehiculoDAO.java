@@ -18,9 +18,11 @@ public class tipoVehiculoDAO {
     
     //Método Insert
     public static boolean insertTv (TipoVehiculo tv){
+        
+        
         try{
             Connection cone = conexionLib.conectarnosDB();
-            String sql = "INSERT INTO tipo_vehiculo (id_tv, nombre_tv) VALUES (?,?)";
+            String sql = "INSERT INTO tipo_vehiculo (id, nomtv) VALUES (?,?)";
             PreparedStatement ps = cone.prepareStatement(sql);
             ps.setInt(1, tv.getIdTv());
             ps.setString(2, tv.getNomTv());

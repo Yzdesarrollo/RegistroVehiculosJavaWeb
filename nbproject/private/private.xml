@@ -2,6 +2,19 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/503/Desktop/programacion-avanzada-taller-vehiculos/src/java/Controladores/tipoVehiculoControlador.java</file>
+            <file>file:/C:/Users/503/Desktop/programacion-avanzada-taller-vehiculos/src/java/Controladores/VehiculoController.java</file>
+            <file>file:/C:/Users/503/Desktop/programacion-avanzada-taller-vehiculos/src/java/dao/VehiculoDAO.java</file>
+            <file>file:/C:/Users/503/Desktop/programacion-avanzada-taller-vehiculos/src/java/dao/conexionLib.java</file>
+            <file>file:/C:/Users/503/Desktop/programacion-avanzada-taller-vehiculos/src/java/dao/tipoVehiculoDAO.java</file>
+            <file>file:/C:/Users/503/Desktop/programacion-avanzada-taller-vehiculos/web/index.jsp</file>
+            <file>file:/C:/Users/503/Desktop/programacion-avanzada-taller-vehiculos/web/conductor.jsp</file>
+            <file>file:/C:/Users/503/Desktop/programacion-avanzada-taller-vehiculos/web/vehiculo.jsp</file>
+            <file>file:/C:/Users/503/Desktop/programacion-avanzada-taller-vehiculos/web/listaTipo.jsp</file>
+            <file>file:/C:/Users/503/Desktop/programacion-avanzada-taller-vehiculos/src/java/modelos/TipoVehiculo.java</file>
+            <file>file:/C:/Users/503/Desktop/programacion-avanzada-taller-vehiculos/src/java/modelos/Vehiculo.java</file>
+            <file>file:/C:/Users/503/Desktop/programacion-avanzada-taller-vehiculos/web/registrarTv.jsp</file>
+        </group>
     </open-files>
 </project-private>

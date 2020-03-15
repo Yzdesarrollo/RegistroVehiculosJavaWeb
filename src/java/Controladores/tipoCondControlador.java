@@ -5,20 +5,21 @@
  */
 package Controladores;
 
-import dao.tipoVehiculoDAO;
+import dao.tipoConductorDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.HashSet;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import modelos.TipoVehiculo;
+import modelos.TipoConductor;
 
 /**
  *
- * @author 503
+ * @author yeison.ariel
  */
-public class tipoVehiculoControlador extends HttpServlet {
+public class tipoCondControlador extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -33,7 +34,17 @@ public class tipoVehiculoControlador extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
+            /* TODO output your page here. You may use following sample code. 
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet tipoCondControlador</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet tipoCondControlador at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>"); 
+            */
         }
     }
 
@@ -63,24 +74,30 @@ public class tipoVehiculoControlador extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //processRequest(request, response);
+        // processRequest(request, response);
         
-        //Recibir parametros
-        int idTv = Integer.parseInt(request.getParameter("txtTv"));
-        String nomTv = request.getParameter("txtNomTv");
+        // Recibir los datos del Form
+        int IdTc = Integer.parseInt(request.getParameter("txtTc"));
+        String NomTc = request.getParameter("txtNomTc");
         
-        //Instanciar modelo
-        TipoVehiculo tipoVehi = new TipoVehiculo();
-        tipoVehi.setIdTv(idTv);
-        tipoVehi.setNomTv(nomTv);
+        // Instanciar el modelo
+        TipoConductor tipoCond = new TipoConductor();
+        tipoCond.setIdTipoConductor(IdTc);
+        tipoCond.setNomTipoConductor(NomTc);
         
-        if(tipoVehiculoDAO.insertTv(tipoVehi)){
-            request.setAttribute("mensaje", "El tipo de vehiculo se registro correctamente.");
-        }else{
-            request.setAttribute("mensaje", "El tipo de vehiculo no pudo ser registrado.");
+        tipoConductorDAO.insertartc(tipoCond);
+        
+        if (tipoConductorDAO.insertartc(tipoCond))
+        {
+            request.setAttribute("mensaje","Tipo de conductor se registro correctamente");
+        }
+        else
+        {
+            request.setAttribute("mensaje","Tipo de conductor no se registro correctamente");
         }
         
-        request.getRequestDispatcher("registrarTv.jsp").forward(request, response);
+        request.getRequestDispatcher("registrarConductor.jsp").forward(request, response);
+        
     }
 
     /**

@@ -4,9 +4,25 @@
         <servlet-name>tipoVehiculoControlador</servlet-name>
         <servlet-class>Controladores.tipoVehiculoControlador</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>VehiculoController</servlet-name>
+        <servlet-class>Controladores.VehiculoController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>tipoCondControlador</servlet-name>
+        <servlet-class>Controladores.tipoCondControlador</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>tipoVehiculoControlador</servlet-name>
         <url-pattern>/tipoVehiculoControlador</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VehiculoController</servlet-name>
+        <url-pattern>/VehiculoController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>tipoCondControlador</servlet-name>
+        <url-pattern>/tipoCondControlador</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -442,17 +442,25 @@
 							</li>
 
 							<li class="">
-								<a href="#">
+								<a href="">
 									<i class="menu-icon fa fa-caret-right"></i>
-									Registrar Vehículo
+								
 								</a>
 
 								<b class="arrow"></b>
 							</li>
                                                         <li class="">
-								<a href="#">
+								<a href="registrarTv.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Registrar Tipo Vehículo
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+                                                        <li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+								
 								</a>
 
 								<b class="arrow"></b>
@@ -594,7 +602,7 @@
                                                                                     <form action="tipoVehiculoControlador" method="POST">
                                                                                         <div class="form-group">
                                                                                             <label class="col-sm-2 control-label no-padding-right">
-                                                                                                Tipo Vehículo
+                                                                                                ID Vehiculo:
                                                                                             </label>
                                                                                             <div class="col-sm-10">
                                                                                                 <input type="text" name="txtTv" class="form-control" placeholder="Ingresar ID">
@@ -603,10 +611,10 @@
                                                                                         <br/><br/>
                                                                                         <div class="form-group">
                                                                                             <label class="col-sm-2 control-label no-padding-right">
-                                                                                                Nombre
+                                                                                                Tipo de Vehiculo:
                                                                                             </label>
                                                                                             <div class="col-sm-10">
-                                                                                                <input type="text" name="txtNomTv" class="form-control" placeholder="Ingresar nombre Tipo de Vehículo">
+                                                                                                <input type="text" name="txtNomTv" class="form-control" placeholder="Ingresar tipo de Vehículo">
                                                                                             </div>
                                                                                         </div>
                                                                                         <button type="submit" name="btnGuardarTv" class="btn btn-success">
@@ -664,7 +672,7 @@
 				<div class="footer-inner">
 					<div class="footer-content">
 						<span class="bigger-120">
-							Wilson Castro Gil &copy; SoWil-2019
+							Yeison Ariel Zaraza &copy; CESDE-2019
 						</span>
 
 						&nbsp; &nbsp;
