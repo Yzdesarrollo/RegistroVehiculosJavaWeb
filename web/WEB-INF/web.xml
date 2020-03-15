@@ -24,6 +24,10 @@
         <servlet-name>vehiculoControlador</servlet-name>
         <servlet-class>Controladores.vehiculoControlador</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>rutaControlador</servlet-name>
+        <servlet-class>Controladores.rutaControlador</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>tipoVehiculoControlador</servlet-name>
         <url-pattern>/tipoVehiculoControlador</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>vehiculoControlador</servlet-name>
         <url-pattern>/vehiculoControlador</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>rutaControlador</servlet-name>
+        <url-pattern>/rutaControlador</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
