@@ -473,6 +473,14 @@
 
 								<b class="arrow"></b>
 							</li>
+                                                         <li class="">
+								<a href="vehiculo.jsp">
+									<i class="menu-icon fa fa-caret-right"></i>
+                                                                        Registrar Vehiculo
+								</a>
+
+								<b class="arrow"></b>
+							</li>
               <!-- <li class="">
 								<a href="#">
 									<i class="menu-icon fa fa-caret-right"></i>

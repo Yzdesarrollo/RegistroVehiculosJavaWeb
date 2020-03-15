@@ -1,6 +1,6 @@
 <%-- 
-    Document   : conductor
-    Created on : Mar 15, 2020, 9:05:16 AM
+    Document   : vehiculo
+    Created on : Mar 15, 2020, 10:34:22 AM
     Author     : yeison.ariel
 --%>
 
@@ -448,18 +448,11 @@
 
 								<b class="arrow"></b>
 							</li>
+                                                    
                                                         <li class="">
-								<a href="registrarTv.jsp">
+								<a href="vehiculo.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
-									Registrar Tipo Vehículo
-								</a>
-
-								<b class="arrow"></b>
-							</li>
-                                                        <li class="">
-								<a href="">
-									<i class="menu-icon fa fa-caret-right"></i>
-								
+                                                                        Registrar Vehiculo
 								</a>
 
 								<b class="arrow"></b>
@@ -598,48 +591,48 @@
 										<!-- div.dataTables_borderWrap -->
 										<div>
                                                                                     
-                                                                                    <form action="conductorControlador" method="POST">
+                                                                                    <form action="vehiculoControlador" method="POST">
                                                                                         <div class="form-group">
                                                                                             <label class="col-sm-2 control-label no-padding-right">
-                                                                                                ID:
+                                                                                                Placa:
                                                                                             </label>
                                                                                             <div class="col-sm-10">
-                                                                                                <input type="text" name="txtidc" class="form-control" placeholder="Ingresar ID">
+                                                                                                <input type="text" name="txtplaca" class="form-control" placeholder="Ingresar Placa">
                                                                                             </div>
                                                                                         </div>
                                                                                         <br/><br/>
                                                                                         <div class="form-group">
                                                                                             <label class="col-sm-2 control-label no-padding-right">
-                                                                                                Nombre:
+                                                                                                Marca:
                                                                                             </label>
                                                                                             <div class="col-sm-10">
-                                                                                                <input type="text" name="txtNomTC" class="form-control" placeholder="Ingresar nombre">
+                                                                                                <input type="text" name="txtmarca" class="form-control" placeholder="Ingresar Marca">
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="form-group">
                                                                                             <label class="col-sm-2 control-label no-padding-right">
-                                                                                                Tipo de Licencia:
+                                                                                                Referencia:
                                                                                             </label>
                                                                                             <div class="col-sm-10">
-                                                                                                <input type="text" name="txtLC" class="form-control" placeholder="Ingresar Licencia">
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <br/><br/>
-                                                                                        <div class="form-group">
-                                                                                            <label class="col-sm-2 control-label no-padding-right">
-                                                                                                ID Vehiculo:
-                                                                                            </label>
-                                                                                            <div class="col-sm-10">
-                                                                                                <input type="text" name="txtIVC" class="form-control" placeholder="Ingresar ID Vehiculo">
+                                                                                                <input type="text" name="txtref" class="form-control" placeholder="Ingresar Licencia">
                                                                                             </div>
                                                                                         </div>
                                                                                         <br/><br/>
                                                                                         <div class="form-group">
                                                                                             <label class="col-sm-2 control-label no-padding-right">
-                                                                                                ID tipo de conductor:
+                                                                                                Modelo:
                                                                                             </label>
                                                                                             <div class="col-sm-10">
-                                                                                                <input type="text" name="txtITC" class="form-control" placeholder="Ingresar ID tipo conductor">
+                                                                                                <input type="text" name="txtmodel" class="form-control" placeholder="Ingresar Modelo">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <br/><br/>
+                                                                                        <div class="form-group">
+                                                                                            <label class="col-sm-2 control-label no-padding-right">
+                                                                                                ID tipo de Vehiculo:
+                                                                                            </label>
+                                                                                            <div class="col-sm-10">
+                                                                                                <input type="text" name="txtitv" class="form-control" placeholder="Ingresar ID tipo Vehiculo">
                                                                                             </div>
                                                                                         </div>
                                                                                         <br/><br/>
