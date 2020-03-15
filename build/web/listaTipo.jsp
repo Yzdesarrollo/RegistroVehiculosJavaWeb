@@ -458,9 +458,9 @@
 								<b class="arrow"></b>
 							</li>
                                                         <li class="">
-								<a href="">
+								<a href="contrato.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
-								
+                                                                        Registrar Contrato
 								</a>
 
 								<b class="arrow"></b>

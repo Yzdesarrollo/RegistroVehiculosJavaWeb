@@ -12,6 +12,10 @@
         <servlet-name>tipoCondControlador</servlet-name>
         <servlet-class>Controladores.tipoCondControlador</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>contratoControlador</servlet-name>
+        <servlet-class>Controladores.contratoControlador</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>tipoVehiculoControlador</servlet-name>
         <url-pattern>/tipoVehiculoControlador</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>tipoCondControlador</servlet-name>
         <url-pattern>/tipoCondControlador</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>contratoControlador</servlet-name>
+        <url-pattern>/contratoControlador</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
